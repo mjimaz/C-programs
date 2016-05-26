@@ -38,12 +38,6 @@ struct Node * lastKthNode(struct Node *list, int k){
   struct Node *head = list, *kLast = list;
   int counter = 0;
 
-  while(head){
-    printf("%d\n", head->num);
-    head = head->next;
-  }
-  printf("******\n");
-  head = list;
   while(head->next){
     head = head->next;
     if(counter == k){
